@@ -1,3 +1,7 @@
+// 思路
+// 1. 首先循环字符串创建一个map类型的对象 {t:7, ...}
+// 2。遍历对象，找到最大值和最大值的字符串
+
 function findMaxDuplicateChar(str) {
   let maxChar = '';
   let maxValue = 1;
