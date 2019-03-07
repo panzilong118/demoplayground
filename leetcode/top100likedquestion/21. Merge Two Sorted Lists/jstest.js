@@ -1,3 +1,5 @@
+// 暴力模拟
+
 function ListNode(val) {
     this.val = val;
     this.next = null;
