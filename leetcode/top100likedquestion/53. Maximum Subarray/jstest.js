@@ -5,15 +5,15 @@
 // 思路
 // 双重循环数组，外层循环数组开始时 theSum 初始化为0，
 // 内层循环数组，初始索引值以外层循环索引值开始，累加theSum，直到找到最大值 maxSum
-function arrSum(arr){
+function arrSum(nums){
   //当前循环的最大值
   var theSum = 0;
   //子数组最大值
-  var maxSum = arr[0];
-  for(var i=0; i<arr.length; i++){
+  var maxSum = nums[0];
+  for(var i=0; i<nums.length; i++){
     theSum = 0;
-    for(var j = i; j<arr.length; j++){
-      theSum += arr[j];
+    for(var j = i; j<nums.length; j++){
+      theSum += nums[j];
       if(theSum > maxSum){
         maxSum = theSum;
       }
@@ -23,6 +23,6 @@ function arrSum(arr){
   return maxSum;
 }
 
-// var arr = [1,-2,3,10,-4,7,2,-5];
-var arr = [-1];
-arrSum(arr);
+// var nums = [1,-2,3,10,-4,7,2,-5];
+var nums = [-1];
+arrSum(nums);
