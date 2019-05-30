@@ -15,10 +15,10 @@
 // console.log('end');
 
 /* 参考资料
- *  https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve
- * 详解 setTimeout、setImmediate、process.nextTick 的区别 https://www.cnblogs.com/onepixel/articles/7605465.html
- * Process.nextTick 和 setImmediate 的区别？ https://www.zhihu.com/question/23028843
- * 从promise、process.nextTick、setTimeout出发，谈谈Event Loop中的Job queue https://github.com/forthealllight/blog/issues/5
+ *  MDN Promise.resolve() https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve
+ * 详解 setTimeout、setImmediate、process.nextTick 的区别 https://www.cnblogs.com/onepixel/articles/7605465.html （不是很清楚）
+ * Process.nextTick 和 setImmediate 的区别？ https://www.zhihu.com/question/23028843 （不是很清楚）
+ * 从promise、process.nextTick、setTimeout出发，谈谈Event Loop中的Job queue https://github.com/forthealllight/blog/issues/5 (写的非常好)
  */
 // 输出结果 'end' -> 'nextTick' -> 'promise1' -> 'promise2' -> 'setImmediate'
 router.get('/swig', function (req, res, next) {
