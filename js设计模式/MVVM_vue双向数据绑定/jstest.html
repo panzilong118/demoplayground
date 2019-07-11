@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jstest</title>
+    <link rel="stylesheet" type="text/css" href="jstest.css" />
+  </head>
+  <body>
+
+    <div id="app">
+      <form>
+        <input type="text"  v-model="number">
+        <button type="button" v-click="increment">增加</button>
+        <input type="text"  v-model="number1">
+      </form>
+      <h3 v-bind="number"></h3>
+      <h3 v-bind="number1"></h3>
+    </div>
+
+    <script type="text/javascript" src="jstest.js"></script>
+  </body>
+</html>
