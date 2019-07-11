@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>jstest</title>
+  <link href="./jstest.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <p>test p</p>
+    <button id="btn">test button</button>
+  </div>
+  <!-- <div id="demo">  this is demo id is demo   </div> -->
+  <div id="test">  this is test id is test   </div>
+  <!-- <div id="demo_tag" class="template">
+    <div id="tag_cloud">
+      {% for(var i = 0, len = tagCloud.length; i < len; i++){
+        var ctx = tagCloud[i];%}
+        <a href="#" class="tag_item
+          {% if(ctx['is_selected']){ %}
+            selected
+          {% } %}
+          " title="{%=ctx["title"]%}">{%=ctx["text"]%}</a>
+      {% } %}
+    </div>
+  </div> -->
+  <script id="demo_script" type="text/template">
+    <div id="tag_cloud">
+      {% for(var i = 0, len = tagCloud.length; i < len; i++){
+        var ctx = tagCloud[i];%}
+        <a href="#" class="tag_item {% if(ctx['is_selected']){ %} selected {% } %}"
+        title="{%=ctx["title"]%}">{%=ctx["text"]%}</a>
+      {% } %}
+    </div>
+  </script>
+  <!-- <script src="./jquery.min.js"></script> -->
+  <!-- <script src="./jquery.easing.min.js"></script> -->
+  <script src="./jstest.js"></script>
+  <!-- <script src="./jstestasync.js"></script> -->
+  <script src="./widget/tag_cloud.js"></script>
+
+
+</body>
+
+</html>
