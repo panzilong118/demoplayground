@@ -1,7 +1,12 @@
+/*
+ * 实现原理就是 mask 使用fixed定位和透明度实现遮罩层效果, warn 使用绝对定位实现屏幕居中显示
+ * 如果 mask 标签放在 warn 标签的后面, 则需要给 warn 设置 z-index;
+*/
+
 body {
   background-image: url(a.jpeg);
 }
-.outer{
+.warn{
   height: 500px;
   width: 500px;
   position: absolute;
@@ -14,7 +19,7 @@ body {
   border: 1px solid red;
   z-index: 1;
 }
-.cover-pannel {
+.mask {
   background-color: rgba(0,0,0,.5);
   width: 100%;
   height: 100%;
