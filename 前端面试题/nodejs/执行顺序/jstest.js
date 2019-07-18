@@ -69,16 +69,3 @@ router.get('/swig', function (req, res, next) {
 // process.nextTick(function(){console.log(5)});
 //
 // console.log(6);
-
-// window.name = 'bytedance';
-// function A () {
-//   this.name = 123;
-// }
-//
-// A.prototype.getA = function () {
-//   console.log(this,'<-----this');
-//   return this.name + 1;
-// }
-// let a = new A();
-// let funcA = a.getA;
-// funcA();
