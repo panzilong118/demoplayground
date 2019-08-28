@@ -1,3 +1,7 @@
+/*
+* 一. 用原生js实现，要求：不能搜索网上资源，做到组件化，时间100 min。
+* 1. 实现一个div滑动的动画，由快至慢5s结束（不准用css3)。
+*/
 var container = document.getElementById('container');
 
 function animate(ele,spd){
@@ -17,4 +21,5 @@ function animate(ele,spd){
         ele.style.left = leftpx + 'px';
     }, spd);
 }
+//组件 - animate
 animate(container, 15);
