@@ -1,3 +1,34 @@
-.match-pad{
-  display: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+#div1{
+    margin:200px auto;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    margin: 0 auto;
+    background-color: #ededed;
+    color: #3b200c;
+    width: 400px;
+    border: none;
+}
+
+li{
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+    background-color: #ede387;
+    border: none;
 }
