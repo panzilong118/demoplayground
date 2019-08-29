@@ -32,10 +32,19 @@
 /*
 * 一. 用原生js实现，要求：不能搜索网上资源，做到组件化，时间100 min。
 * 2. 页面内有一个input输入框，实现在数组arr查询命中词并要求autocomplete效果。
+* input的autocomplete效果 ---又是一道腾讯编程题
+* https://blog.csdn.net/github_36487770/article/details/80084512
 */
 
 var arr = ['a','apple','abandon','bilibili','beep','before','become','being','highmaintains','by','bye','banana']
 
+/*
+* 原生JS中可以直接使用ID名称来获取元素，而不用使用getElementById()方法？
+* 这个最初是 IE 里面的，后来 firefox chrome 好像也支持了。
+* 不建议使用，这个不是标准里面的，将来不一定支持。
+* 而且代码容易写混乱了，multiNavItem1 属于全局作用域，而且你可以给他赋值，赋值之后就是那个新的值，不赋值就是那个元素的值，
+* 当有些 id 赋了值有些没有，那么有些就是这个 DOM 对象，有些不是，特别容易混乱了。
+*/
 input.addEventListener('input', function(event){
     // 做了trim
     var _value = event.target.value.trim()
