@@ -1,0 +1,41 @@
+body {
+  /* 2x LC width + RC width */
+  min-width: 550px;
+}
+#container {
+  /* LC width */
+  padding-left: 200px;
+  /* RC width */
+  padding-right: 150px;
+}
+#container .column {
+  height: 200px;
+  position: relative;
+  float: left;
+}
+#center {
+  background-color: #e9e9e9;
+  width: 100%;
+}
+#left {
+  background-color: red;
+  /* LC width */
+  width: 200px;
+  /* LC width */
+  right: 200px;
+  margin-left: -100%;
+}
+#right {
+  background-color: blue;
+  /* RC width */
+  width: 150px;
+   /* RC width */
+  margin-right: -150px;
+}
+#footer {
+  clear: both;
+}
+#header,
+#footer {
+  background-color: #c9c9c9;
+}
