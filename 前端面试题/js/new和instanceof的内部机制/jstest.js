@@ -12,14 +12,17 @@ function Person (name) {
  */
 
 // let p = new Person();
-let p = (function () {
+const new1 = function (name) {
     // 创建一个新对象
-    let obj = {};
+    const obj = {};
     // 该对象继承构造函数的原型，即Person.prototype；
     obj.__proto__ = Person.prototype;
     // 其他赋值语句...
+    Person.call(obj, name);
     return obj;
-})();
+};
+
+const p1 = new1('zhangsan');
 
 /* -------------------- */
 
