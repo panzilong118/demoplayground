@@ -6,7 +6,7 @@
 */
 var container = document.getElementById('container');
 
-function animate(ele,spd){
+function animate(ele,spd) {
     var start = Date.now(); // remember start time
     var timer = setInterval(function() {
         var timePassed = Date.now() - start;
