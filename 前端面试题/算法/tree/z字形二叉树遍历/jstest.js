@@ -53,7 +53,8 @@
              queue.push(t.right)
            }
        } else {
-         if (!isOdd) {
+         if (!isOdd) { // 偶数层翻转
+         // if (isOdd) { // 奇数层翻转
            levelNodes = levelNodes.reverse();
          }
          items.push(levelNodes)
