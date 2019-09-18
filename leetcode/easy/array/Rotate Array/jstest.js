@@ -37,14 +37,15 @@ var rotate = function(nums, k) {
     var numsEnd = nums.splice(nums.length-k);
     console.log(numsEnd,"<--------------numsEnd");
     console.log(nums,"<--------------nums");
-    for(var i =numsEnd.length-1; i >= 0; i--){
-      nums.unshift(numsEnd[i]);
-    }
+    // for(var i =numsEnd.length-1; i >= 0; i--){
+    //   nums.unshift(numsEnd[i]);
+    // }
+    nums.unshift(...numsEnd);
     console.log(nums,"<--------------nums");
     // return nums;
 };
 
-var A = [1,2,3,4,5,6,7],
+var arr = [1,2,3,4,5,6,7],
 // var A = [-1,-100,3,99],
     k = 2;
-rotate(A,k);
+rotate(arr,k);
