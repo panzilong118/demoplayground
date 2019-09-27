@@ -1,5 +1,5 @@
 /*
-  350. Intersection of Two Arrays II 两个数组的交集
+  350. Intersection of Two Arrays II 有重复的两个数组的交集
   Given two arrays, write a function to compute their intersection.
 
   Example 1:
