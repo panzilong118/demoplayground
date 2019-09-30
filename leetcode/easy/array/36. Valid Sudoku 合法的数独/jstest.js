@@ -1,5 +1,5 @@
 /*
-  36. Valid Sudoku 合法的数独
+  36. Valid Sudoku 合法的数独矩阵
   https://leetcode.com/problems/valid-sudoku/
   Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
 
